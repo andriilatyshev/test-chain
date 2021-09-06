@@ -41,4 +41,4 @@ jobs:
           token: ${{ secrets.SECRET_PAT }}
           repository: andriilatyshev/test-ci
           event-type: run-test-ci
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+          client-payload: '{ "sha": "${{ github.sha }}", "repository":"${{ github.repository }}"}'
